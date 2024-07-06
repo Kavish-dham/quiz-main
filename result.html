@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizCraze | Result</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="result.css">
+    <script src="result.js" defer></script>
+    <script src="index.js" defer></script>
+    <link rel="icon" href="/public/logo.png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div
+        class="p-6 w-full flex justify-between sm:justify-around items-center border-b-[1px] border-slate-600 backdrop-blur-md z-50 fixed text-xl bg-white/50">
+        <div>
+            <a href="index.html"><img src="/public/logo.png" alt="logo" /></a>
+        </div>
+
+        <div class="sm:flex gap-6 items-center font-semibold hidden">
+            <a href="/setup.html" class="hover:underline">
+                <div>Setup</div>
+            </a>
+            <a href="/index.html#about" class="hover:underline">
+                <div>About Us</div>
+            </a>
+            <a href="/index.html#category" class="hover:underline">
+                <div>Categories</div>
+            </a>
+            <a href="/index.html#contact" class="hover:underline">
+                <div>Contact Us</div>
+            </a>
+        </div>
+
+        <div class="sm:hidden cursor-pointer" onclick="toggleHamburger(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="hidden absolute top-0 left-0 text-nowrap min-w-[50vw]" id="hamburger-menu">
+            <div
+                class="h-screen absolute p-10 max-w-[85vw] min-w-[50vw] left-0 top-0 z-50 bg-[#242323e0] backdrop-blur-xl flex flex-col gap-20 items-center transition-all duration-500">
+                <div>
+                    <img src="/public/logo.png" alt="logo" />
+                </div>
+
+                <div class="flex flex-col gap-6 items-center font-semibold text-white">
+                    <a href="/setup.html" class="hover:underline">
+                        <div>Setup</div>
+                    </a>
+                    <a href="/index.html#about" class="hover:underline">
+                        <div>About Us</div>
+                    </a>
+                    <a href="/index.html#category" class="hover:underline">
+                        <div>Catogories</div>
+                    </a>
+                    <a href="/index.html#contact" class="hover:underline">
+                        <div>Contact Us</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="result-bg min-h-screen w-full flex justify-center py-[20vh]">
+        <div id="result-box-bg"
+            class="min-h-[50vh] min-w-[60%] flex flex-col gap-10 items-center justify-center text-4xl md:text-5xl rounded-xl shadow-md shadow-black/40 p-4 md:p-10 border-b-2 border-slate-100 px-6">
+            <div class="border-b-2 border-slate-300 pb-10">
+
+                <h1 class="text-center font-semibold text-6xl drop-shadow-2xl">Your Result</h1>
+                <div
+                    class="flex flex-col sm:flex-row items-center w-full sm:shadow-md sm:shadow-black/40 sm:rounded-full sm:p-6">
+                    <div class="w-full sm:w-auto flex justify-center md:justify-start">
+                        <div
+                            class="rounded-full shadow-sm shadow-black/30 p-4 flex bg-slate-400 z-50 w-full sm:w-auto text-3xl font-semibold h-16 justify-center items-center sm:px-8 text-nowrap">
+                            Your Score is :
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-auto flex justify-center md:justify-center">
+                        <div id="result"
+                            class="rounded-full shadow-sm shadow-black/30 p-4 sm:px-20 bg-slate-300 z-40 text-center flex justify-center items-center w-full sm:w-auto text-3xl font-semibold h-16 sm:-left-[25%] sm:relative">
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-auto flex justify-center md:justify-end">
+                        <div
+                            class="rounded-full shadow-sm shadow-black/30 p-4 flex bg-slate-200 z-30 w-full sm:w-auto justify-center items-center text-3xl font-semibold h-16 sm:-left-[35%] sm:relative sm:px-24">
+                            Points</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-b-2 border-slate-300 pb-10 flex flex-col justify-center items-center w-full gap-10">
+
+
+                <h1 class="text-center font-semibold text-3xl drop-shadow-2xl">Remarks</h1>
+                <div id="remarks" class="rounded-full p-6 text-2xl bg-slate-400 font-semibold px-12"></div>
+
+            </div>
+
+            <a href="/setup.html"><button
+                    class="text-xl font-semibold shadow-md shadow-black/40 backdrop-blur-md rounded-full p-6 px-10 bg-green-300">Take
+                    another Quiz</button></a>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizCraze | Home</title>
+  <link rel="stylesheet" href="/src/output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
+  <link rel="icon" href="/public/logo.png">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div
+    class="p-6 w-full flex justify-between sm:justify-around items-center border-b-[1px] border-slate-600 backdrop-blur-md z-50 fixed text-xl bg-white/50">
+    <div>
+      <a href="index.html"><img src="/public/logo.png" alt="logo" /></a>
+    </div>
+
+    <div class="sm:flex gap-6 items-center font-semibold hidden">
+      <a href="/setup.html" class="hover:underline">
+        <div>Setup</div>
+      </a>
+      <a href="/index.html#about" class="hover:underline">
+        <div>About Us</div>
+      </a>
+      <a href="/index.html#category" class="hover:underline">
+        <div>Categories</div>
+      </a>
+      <a href="/index.html#contact" class="hover:underline">
+        <div>Contact Us</div>
+      </a>
+    </div>
+
+    <div class="sm:hidden cursor-pointer" onclick="toggleHamburger(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <div class="hidden absolute top-0 left-0 text-nowrap min-w-[50vw]" id="hamburger-menu">
+      <div
+        class="h-screen absolute p-10 max-w-[85vw] min-w-[50vw] left-0 top-0 z-50 bg-[#242323e0] backdrop-blur-xl flex flex-col gap-20 items-center transition-all duration-500">
+        <div>
+          <img src="/public/logo.png" alt="logo" />
+        </div>
+
+        <div class="flex flex-col gap-6 items-center font-semibold text-white">
+          <a href="/setup.html" class="hover:underline">
+            <div>Setup</div>
+          </a>
+          <a href="/index.html#about" class="hover:underline">
+            <div>About Us</div>
+          </a>
+          <a href="/index.html#category" class="hover:underline">
+            <div>Categories</div>
+          </a>
+          <a href="/index.html#contact" class="hover:underline">
+            <div>Contact Us</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="h-screen w-full hero flex items-center justify-center relative">
+    <div class="absolute w-full h-screen bg-blue-500/50 -z-0"></div>
+    <div class="text-center md:pt-32 relative z-10 max-w-[1000px]">
+      <h1 class="font-bold drop-shadow-lg text-4xl md:text-7xl text-red-500">
+        WELCOME TO THE QUIZ!
+      </h1>
+      <p class="px-6 md:mx-30 my-4 md:my-8 text-base md:text-lg text-white font-bold w-full">
+        Challenge your brain and test your knowledge with Quiz Hero! Explore
+        diverse categories, from history and science to pop culture and
+        sports. Enjoy interactive quizzes, instant feedback, and track your
+        progress. Compete with friends and join a community of trivia
+        enthusiasts. Ready to become a Quiz Hero? Start your adventure now!
+      </p>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+  <div class="w-[90%] mx-auto py-20 flex justify-center items-center flex-col gap-10 border-b-2 border-slate-300"
+    id="about">
+    <h1 class="text-center text-6xl text-wrap font-bold text-blue-500">About Us</h1>
+    <p class="max-w-[80%] text-center text-2xl font-semibold">Welcome to QuizCraze, your ultimate destination for fun
+      and engaging quizzes! At QuizCraze, we believe in the power of
+      curiosity and the joy of discovery. Our mission is to create a platform where you can challenge your knowledge,
+      learn
+      new things, and have a great time. Whether you're a trivia buff, a student looking to test your skills, or just
+      someone
+      who loves a good brain teaser, QuizCraze has something for everyone. Our diverse range of quizzes covers topics
+      from
+      history and science to pop culture and sports, ensuring there's always something new to explore. Join our
+      community of
+      quiz enthusiasts today and dive into the excitement of QuizCraze!
+    </p>
+  </div>
+
+  <!-- Categories section -->
+  <div class=" pt-20 w-full border-b-2 border-slate-300" id="category">
+    <h1 class="text-center text-9xl text-green-400 font-bold">10+</h1>
+    <h1 class="text-center text-4xl font-semibold ">Unique Quiz Categories</h1>
+    <br>
+    <br>
+    <h1 class="text-center text-6xl text-green-400 font-bold">Multiple</h1>
+    <br>
+    <h1 class="text-center text-4xl font-semibold ">Quiz Difficulty</h1>
+
+    <div class="flex flex-wrap gap-10 justify-center items-center w-full py-10">
+      <img src="/public/category 1.png" class="w-[90%] sm:w-[40%] rounded-xl shadow-md shadow-black/80"
+        alt="category 1">
+      <img src="/public/category 2.png" class="w-[90%] sm:w-[40%] rounded-xl shadow-md shadow-black/80"
+        alt="category 1">
+      <img src="/public/category 3.png" class="w-[90%] sm:w-[40%] rounded-xl shadow-md shadow-black/80"
+        alt="category 1">
+      <img src="/public/category 4.png" class="w-[90%] sm:w-[40%] rounded-xl shadow-md shadow-black/80"
+        alt="category 1">
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="py-20 min-h-screen flex items-center flex-col" id="contact">
+    <h1 class="text-center text-6xl text-red-500 font-bold">Contact Us</h1>
+    <h1 class="text-center text-4xl font-semibold pt-5">Join Our Community Today</h1>
+    <br>
+    <br>
+    <div class="min-w-[50%] p-12 shadow-md shadow-black/80 flex flex-col gap-5 justify-center rounded-xl">
+      <h3 class="text-3xl font-bold text-center">Our Contact Info</h3>
+      <h5 class="text-xl font-semibold">Phone Number :</h5>
+      <div>
+
+        <p class="text-lg ">+91 98765 43210</p>
+        <p class="text-lg ">+91 98765 43210</p>
+        <p class="text-lg ">+91 98765 43210</p>
+      </div>
+      <h5 class="text-xl font-semibold">Email :</h5>
+      <div>
+
+        <p class="text-lg ">quizcraze@gmail.com</p>
+        <p class="text-lg ">support@quizcraze.com</p>
+        <p class="text-lg ">help@quizcraze.com</p>
+      </div>
+      <h5 class="text-xl font-semibold">Socials :</h5>
+      <div class="flex flex-wrap gap-16 items-center justify-start">
+
+        <a href="https://www.x.com" class="fa fa-twitter scale-[3]"></a>
+        <a href="https://www.instagram.com" class="fa fa-instagram scale-[3]"></a>
+        <a href="https://www.gmail.com" class="fa fa-google scale-[3]"></a>
+        <a href="https://www.reddit.com" class="fa fa-reddit scale-[3]"></a>
+      </div>
+    </div>
+</body>
+
+</html>

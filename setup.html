@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizCraze | Setup</title>
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="setup.css">
+  <script src="setup.js" defer></script>
+  <script src="index.js" defer></script>
+  <link rel="icon" href="/public/logo.png">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div
+    class="p-6 w-full flex justify-between sm:justify-around items-center border-b-[1px] border-slate-600 backdrop-blur-md z-50 fixed text-xl bg-white/50">
+    <div>
+      <a href="index.html"><img src="/public/logo.png" alt="logo" /></a>
+    </div>
+
+    <div class="sm:flex gap-6 items-center font-semibold hidden">
+      <a href="/setup.html" class="hover:underline">
+        <div>Setup</div>
+      </a>
+      <a href="/index.html#about" class="hover:underline">
+        <div>About Us</div>
+      </a>
+      <a href="/index.html#category" class="hover:underline">
+        <div>Categories</div>
+      </a>
+      <a href="/index.html#contact" class="hover:underline">
+        <div>Contact Us</div>
+      </a>
+    </div>
+
+    <div class="sm:hidden cursor-pointer" onclick="toggleHamburger(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <div class="hidden absolute top-0 left-0 text-nowrap min-w-[50vw]" id="hamburger-menu">
+      <div
+        class="h-screen absolute p-10 max-w-[85vw] min-w-[50vw] left-0 top-0 z-50 bg-[#242323e0] backdrop-blur-xl flex flex-col gap-20 items-center transition-all duration-500">
+        <div>
+          <img src="/public/logo.png" alt="logo" />
+        </div>
+
+        <div class="flex flex-col gap-6 items-center font-semibold text-white">
+          <a href="/setup.html" class="hover:underline">
+            <div>Setup</div>
+          </a>
+          <a href="/index.html#about" class="hover:underline">
+            <div>About Us</div>
+          </a>
+          <a href="/index.html#category" class="hover:underline">
+            <div>Catogories</div>
+          </a>
+          <a href="/index.html#contact" class="hover:underline">
+            <div>Contact Us</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full setup-bg flex flex-col justify-center items-center">
+
+    <div class="h-[15vh]"></div>
+
+    <div class="w-[80%] setup-bg-2 flex flex-col justify-center items-center py-20 rounded-xl">
+
+      <div class="backdrop-blur-sm max-w-[1000px] min-w-[50%] py-6 shadow-md shadow-black/80 rounded-xl">
+        <h1 class="text-center text-6xl font-bold w-full text-white">SETTINGS</h1>
+        <div class="text-center pt-5">
+
+          <div>
+            <label class="form-control w-full max-w-xs">
+              <div class="label m-2">
+                <span class="label-text font-bold drop-shadow-md">Pick Your Interest!</span>
+              </div>
+              <select class="select select-bordered border-[1px] p-3 shadow-md rounded-lg cursor-pointer w-[200px]"
+                id="category">
+                <option selected>All</option>
+                <option>Music</option>
+                <option>Sport and Leisure</option>
+                <option>Film and TV</option>
+                <option>Arts and Literature</option>
+                <option>History</option>
+                <option>Society and Culture</option>
+                <option>Science</option>
+                <option>Geography</option>
+                <option>Food and Drink</option>
+                <option>General Knowledge</option>
+              </select>
+            </label>
+          </div>
+          <div class="m-8">
+            <label class="form-control w-full max-w-xs">
+              <div class="label m-2">
+                <span class="label-text font-bold drop-shadow-md">Pick Your Difficulty</span>
+              </div>
+              <select class="select select-bordered border-[1px] p-3 rounded-lg shadow-md cursor-pointer w-[200px]"
+                id="difficulty">
+                <option selected>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+
+              </select>
+            </label>
+          </div>
+          <div class=" m-auto mt-4 inline border-2 text-white font-bold px-5 py-2 bg-green-400 rounded-lg shadow-lg">
+            <a href="/quiz.html" class="cursor-pointer"><button>PROCEED</button></a>
+          </div>
+        </div>
+        <div class="text-center flex flex-col justify-center items-center">
+          <h1 class="p-4 font-bold drop-shadow-lg mt-10 text-white text-2xl">MARKING SCHEME</h1>
+          <div class="p-4 text-white text-xl font-semibold bg-white/50 rounded-xl min-w-[50%]">
+            <p class="text-slate-700">0 for skip</p>
+            <p class="text-red-700">-1 for wrong</p>
+            <p class="text-green-700">+1 for correct</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h-[15vh]"></div>
+  </div>
+</body>
+
+</html>
